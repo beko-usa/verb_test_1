@@ -37,6 +37,22 @@ body {
     font-weight: bold;
 }
 
+#review-button {
+    background-color: #28a745; /* 目立つ緑色 */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* サイズを大きく */
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#review-button:hover {
+    background-color: #218838; /* ホバー時にも色を少し濃く */
+}
+
 #answer-input {
     width: 100%;
     padding: 10px;
@@ -61,6 +77,6 @@ body {
 }
 
 #result-image {
-    max-width: 100%;
+    max-width: 20%;
     margin-top: 20px;
 }
