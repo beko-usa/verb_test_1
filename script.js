@@ -150,16 +150,17 @@ function showResult() {
 
     scoreEl.textContent = `正答率: ${accuracy}% (${correctCount} / ${currentQuizQuestions.length})`;
 
+    // 正答率に応じた画像を設定
     if (accuracy === 100) {
-        resultImage.src = 'https://via.placeholder.com/150/4CAF50/FFFFFF?text=Perfect!';
+        resultImage.src = 'perfect.png';
     } else if (accuracy >= 80) {
-        resultImage.src = 'https://via.placeholder.com/150/8BC34A/FFFFFF?text=Great!';
+        resultImage.src = 'great.png';
     } else if (accuracy >= 50) {
-        resultImage.src = 'https://via.placeholder.com/150/FFC107/FFFFFF?text=Good';
+        resultImage.src = 'good.png';
     } else if (accuracy >= 20) {
-        resultImage.src = 'https://via.placeholder.com/150/FF9800/FFFFFF?text=Not+Bad';
+        resultImage.src = 'bad.png';
     } else {
-        resultImage.src = 'https://via.placeholder.com/150/F44336/FFFFFF?text=Try+Again';
+        resultImage.src = 'poor.png';
     }
     
     resultTableBody.innerHTML = '';
